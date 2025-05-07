@@ -1,0 +1,13 @@
+<odoo>
+  <data noupdate="1">
+    <record id="ir_cron_fetch_bol_questions" model="ir.cron">
+      <field name="name">Bol.com Vragen Ophalen</field>
+      <field name="model_id" ref="model_bol_question_fetcher"/>
+      <field name="state">code</field>
+      <field name="code">model.fetch_questions()</field>
+      <field name="interval_number">1</field>
+      <field name="interval_type">hours</field>
+      <field name="active">True</field>
+    </record>
+  </data>
+</odoo>

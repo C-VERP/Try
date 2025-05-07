@@ -1,0 +1,19 @@
+<odoo>
+  <record id="res_config_settings_view_form_bol" model="ir.ui.view">
+    <field name="name">res.config.settings.view.form.bol</field>
+    <field name="model">res.config.settings</field>
+    <field name="inherit_id" ref="base.res_config_settings_view_form"/>
+    <field name="arch" type="xml">
+      <xpath expr="//div[@id='settings']" position="inside">
+        <div class="app_settings_block" data-string="Bol.com Integratie" string="Bol.com Integratie">
+          <h2>Bol.com API instellingen</h2>
+          <div class="row mt16 o_settings_container">
+            <div class="col-12 col-lg-6">
+              <field name="bol_api_token" password="True"/>
+            </div>
+          </div>
+        </div>
+      </xpath>
+    </field>
+  </record>
+</odoo>
